@@ -1,4 +1,4 @@
-# TJU
+# 免责声明
 Tianjin University Course Selection System External Interface (For personal study use only, please do not use for automated course selection, etc.)
 
 ## 环境准备
