@@ -9,7 +9,11 @@ Tianjin University Course Selection System External Interface (For personal stud
 
 
 ## 使用说明
-1. **编辑 `config.yaml`**  
+
+1. 点击右上角 `star` `ヾ(*>∀＜*)(ﾉ∀｀●)⊃`
+<img width="48" height="48" alt="0792EE16" src="https://github.com/user-attachments/assets/0fdb1562-00c1-4281-9ebf-faa008091876" />
+
+2. **编辑 `config.yaml`**  
    
    - 在 `schedule` 下配置预计开始运行的时间（hour、minute）。  
    - 在 `request` 下填写接口和鉴权信息（例如 `url`、`cookie`）。 
@@ -27,7 +31,7 @@ Tianjin University Course Selection System External Interface (For personal stud
    
 
 
-2. **运行脚本**  
+3. **运行脚本**  
    
    - 运行 `main.py` 或终端执行：
      ```powershell
@@ -35,6 +39,6 @@ Tianjin University Course Selection System External Interface (For personal stud
      ```
    - 代码将在指定时间自动发送选课请求，并按顺序尝试选课。
    
-3. **运行机制**    
+4. **运行机制**    
    - 使用配置的请求头和课程编号依次尝试选课，如果选课成功则移除对应课程；若失败会轮询重试。  
    - 会导出日志信息。
