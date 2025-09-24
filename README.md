@@ -37,8 +37,12 @@ Tianjin University Course Selection System External Interface (For personal stud
      ```powershell
      python main.py
      ```
-   - 代码将在指定时间自动发送选课请求，并按顺序尝试选课。
+   - 代码将在指定时间自动发送选课请求，并按顺序尝试选课。建议在预选课阶段试运行，提示`操作失败:当前选课不开放`即为正常。
    
 4. **运行机制**    
    - 使用配置的请求头和课程编号依次尝试选课，如果选课成功则移除对应课程；若失败会轮询重试。  
    - 会导出日志信息。
+
+5. **常见异常**
+   - `empty query` url错误，应是提交选课请求的url，非普通查询的url。
+   - `身份认证***` cookie过期等 
